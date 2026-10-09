@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joseph Wuol Mijak Thon | Professional Portfolio</title>
+
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            line-height: 1.6;
+
+            color: #222;
+
+            background: #f5f7fa;
+
+        }
+
+        /* NAVIGATION */
+
+        nav {
+
+            background: #0b1f3a;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 15px 8%;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+        }
+
+        .logo {
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+        }
+
+        nav ul {
+
+            list-style: none;
+
+            display: flex;
+
+            gap: 25px;
+
+        }
+
+        nav ul li a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+        }
+
+        nav ul li a:hover {
+
+            color: #4da3ff;
+
+        }
+.profile-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+        /* HERO */
+
+        .hero {
+
+            min-height: 90vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            background: linear-gradient(135deg, #0b1f3a, #1261a0);
+
+            color: white;
+
+        }
+
+        .hero-content h1 {
+
+            font-size: 55px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .hero-content h2 {
+
+            font-size: 28px;
+
+            color: #b9dcff;
+
+            margin-bottom: 20px;
+
+        }
+
+        .hero-content p {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 12px 25px;
+
+            background: white;
+
+            color: #0b1f3a;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+
+        }
+
+        .btn:hover {
+
+            background: #4da3ff;
+
+            color: white;
+
+        }
+
+        /* SECTIONS */
+
+        section {
+
+            padding: 70px 8%;
+
+        }
+
+        section h2 {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+
+            color: #0b1f3a;
+
+            font-size: 32px;
+
+        }
+
+        /* ABOUT */
+
+        .about {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+
+            font-size: 18px;
+
+        }
+
+        /* SKILLS */
+
+        .skills-container {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 20px;
+
+        }
+
+        .skill {
+
+            background: white;
+
+            padding: 25px;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+            font-weight: bold;
+
+        }
+
+        /* EXPERIENCE */
+
+        .timeline {
+
+            max-width: 900px;
+
+            margin: auto;
+
+        }
+
+        .job {
+
+            background: white;
+
+            padding: 25px;
+
+            margin-bottom: 20px;
+
+            border-left: 5px solid #1261a0;
+
+            border-radius: 6px;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+        }
+
+        .job h3 {
+
+            color: #1261a0;
+
+        }
+
+        .job span {
+
+            font-size: 14px;
+
+            color: #777;
+
+        }
+
+        /* EDUCATION */
+
+        .education {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 20px;
+
+        }
+
+        .education-card {
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+        }
+
+        /* PROJECTS */
+
+        .projects {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .project {
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+        }
+
+        .project h3 {
+
+            color: #1261a0;
+
+            margin-bottom: 10px;
+
+        }
+
+        /* CONTACT */
+
+        /* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #f4f7fb;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #102a43;
+}
+
+#contact p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 20px;
+    padding: 14px 25px;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #0056b3;
+}
+
+        /* FOOTER */
+
+        footer {
+
+            background: #0b1f3a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 10px;
+
+            }
+
+            nav ul {
+
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+            }
+
+            .hero-content h1 {
+
+                font-size: 38px;
+
+            }
+
+            .hero-content h2 {
+
+                font-size: 22px;
+
+            }
+
+            section {
+
+                padding: 50px 5%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Profile Logo -->
+<div class="profile-logo">
+    <img src="Joseph Wuol Mijak Photo.jpg" alt="Profile Logo">
+</div>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">Joseph Wuol Mijak Thon</div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#education">Education</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Joseph Wuol Mijak Thon</h1>
+
+            <h2>IT Professional | Public Health, Protection (SGBV, MHPSS & RFL) Practitioner</h2>
+
+            <p>
+
+                Welcome to my professional portfolio. I am a dedicated
+
+                professional with experience in information technology,
+
+                community health, protection, hygiene promotion and
+
+                psychosocial support.
+
+            </p>
+
+            <a href="#contact" class="btn">Get In Touch</a>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+
+                I am a motivated professional with progressive experience
+
+                working in humanitarian and community-based programmes.
+
+                My professional interests include Information Technology,
+
+                community health, protection, hygiene promotion, mental
+
+                health and psychosocial support.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                I am currently pursuing a degree in Information Technology
+
+                at Cavendish University Uganda and continuously developing
+
+                my technical and professional skills.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Professional Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Information Technology</div>
+
+            <div class="skill">Web Design and Database Management</div>
+
+            <div class="skill">Protection (SGBV, MHPSS and RFL) Programming</div>
+
+            <div class="skill">Community Health,Hygiene Promotion and Community Mobilization </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <h2>Professional Experience</h2>
+
+        <div class="timeline">
+
+            <div class="job">
+
+                <h3><strong>Protection Officer</strong></h3>
+
+                <span>South Sudan Red Cross (SSRC) | Malakal, Upper Nile State | 1 August 2024 - Till date</span>
+
+                <p>
+
+                   <ol>
+                    <li>Provided mental health and psychosocial support (MHPSS) to vulnerable individuals and communities affected by conflict, displacement and other humanitarian crises.</li>
+                    <li>Conducted community engagement, awareness and protection activities to strengthen access to services and promote community-based protection mechanisms.</li>
+                    <li>Identified protection concerns and supported referrals of vulnerable individuals to appropriate health, protection, GBV and psychosocial services.</li>
+                    <li>Facilitated community consultations, focus group discussions and awareness sessions on protection, wellbeing, safeguarding and available humanitarian services.</li>
+                    <li>Worked closely with community leaders, volunteers, health workers and humanitarian partners to strengthen protection responses and promote safe access to services.</li>
+                   </ol>
+
+                </p>
+
+            </div>
+
+            <div class="job">
+
+                <h3><strong>Protection Officer</strong></h3>
+
+                <span>Danish Refugee Council (DRC) | Malakal, Upper Nile State | 2 May 2023 - 31 July 2024</span>
+
+                <p>
+
+        <ol>
+    <li>Supported protection monitoring and community-based protection activities, identifying key risks affecting vulnerable individuals and groups.</li>
+	<li>Conducted community mobilization, awareness sessions and engagement activities on protection, rights, available services and referral pathways.</li>
+	<li>Supported the implementation and supervision of community-based activities, ensuring quality, participation and adherence to programme standards.</li>
+	<li>Coordinated with community leaders, volunteers and service providers to strengthen referral mechanisms and access to essential humanitarian services.</li>
+<li>Contributed to programme monitoring, documentation and reporting, including collection of community feedback and identification of emerging protection concerns.</li>
+</ol>
+     </p>
+
+            </div>
+
+            <div class="job">
+
+                <h3><strong>SGBV Prevention Officer</strong> </h3>
+
+                <span><strong>International Medical Corps (IMC) | Malakal | 19/Sept/2022 - 30/April/2023</strong></span>
+
+                <p>
+<ol>
+<li> Implemented SGBV prevention and community awareness activities targeting women, girls, men, boys and other vulnerable community members.</li>
+<li> Conducted community mobilization, dialogue sessions and awareness campaigns addressing SGBV risks, prevention, stigma and available support services.</li>
+<li> Supported survivor-centred referrals and linkages to appropriate medical, psychosocial, protection and other specialized services.</li>
+<li> Facilitated health and hygiene education activities, promoting positive health-seeking behaviours and disease prevention within affected communities.</li>
+<li> Worked with community leaders, volunteers and humanitarian actors to strengthen SGBV prevention, community participation and protection mechanisms.</li>
+</ol>
+
+           </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2>Education & Training</h2>
+
+        <div class="education">
+
+            <div class="education-card">
+
+                <h3>Bachelor's Degree in Information Technology</h3>
+
+                <p>
+
+                    Cavendish University Uganda
+
+                </p>
+                <p>
+
+                    2025 - ongoing
+
+                </p>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>Diploma in Public Health</h3>
+
+                <p>
+
+                    Africa Population Institute
+
+                </p>
+                <p>
+
+                    2023 - 2025
+
+                </p>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>Professional Training</h3>
+
+                <p>
+
+                    Protection, SGBV, MHPSS, Hygiene Promotion,
+
+                    Community Health and Humanitarian Programming.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects & Areas of Work</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>SGBV Awareness & Prevention</h3>
+
+                <p>
+
+                    Community awareness, dialogue and survivor-support
+
+                    activities addressing sexual and gender-based violence.
+
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>MHPSS Activities</h3>
+
+                <p>
+
+                    Psychosocial support, awareness and community-based
+
+                    mental health interventions.
+
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Hygiene Promotion</h3>
+
+                <p>
+
+                    Community hygiene education, mobilization and
+
+                    public health promotion activities.
+
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>IT & Web Development</h3>
+
+                <p>
+
+                    Developing technical skills in programming, databases,
+
+                    web design and information systems.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Have a question, project or opportunity?
+        Send me a message below.
+    </p>
+
+    <form
+        action="https://formsubmit.co/josephwuolmijak@gmail.com"
+        method="POST"
+    >
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label for="subject">Subject</label>
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter message subject"
+            required
+        >
+
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <p><strong>Name:</strong> Joseph Wuol Mijak Thon</p>
+
+            <p><strong>Email:</strong> josephwuolmijak@gmail.com</p>
+
+            <p>
+
+                <strong>Phone:</strong>
+
+                +211 928 514 400
+
+            </p>
+
+            <p>
+
+                <strong>Location:</strong>
+
+                South Sudan
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Wuol KhuachNyiel. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
